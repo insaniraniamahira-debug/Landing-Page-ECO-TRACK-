@@ -1,4 +1,4 @@
-/* warna dan font dasar */
+
 :root {
     --primary: #685AFF;
     --primary-light: #8b80ff;
@@ -16,7 +16,7 @@
     --radius-pill: 50px;
 }
 
-/* reset dasar */
+
 * {
     margin: 0;
     padding: 0;
@@ -38,10 +38,6 @@ body {
 a {
     text-decoration: none;
 }
-
-/* ========================================= */
-/* KUMPULAN ANIMASI (KEYFRAMES)              */
-/* ========================================= */
 
 @keyframes fadeInLeft {
     from {
@@ -98,10 +94,6 @@ a {
         transform: translateY(0px); 
     }
 }
-
-/* ========================================= */
-/* LAYOUT UTAMA                              */
-/* ========================================= */
 
 .container {
     width: 100%;
@@ -246,7 +238,6 @@ nav {
     display: none;
 }
 
-/* section hero (beranda) */
 .hero {
     background: linear-gradient(135deg, var(--bg-light) 0%, #E9E6FF 100%);
     padding: 180px 0 100px;
@@ -270,8 +261,6 @@ nav {
     color: var(--dark);
     letter-spacing: -1px;
 }
-
-/* Animasi hero menggunakan waktu (karena posisi di paling atas layar) */
 .hero-text {
     animation: fadeInLeft 1s ease-out forwards;
 }
@@ -305,7 +294,6 @@ nav {
     overflow: hidden; 
 }
 
-/* Animasi slider review muncul dari kiri saat di-scroll */
 .slider-container {
     width: 100%;
     overflow: hidden;
@@ -427,8 +415,6 @@ nav {
     padding: 100px 0;
     position: relative;
 }
-
-/* Animasi grid fitur membesar saat di-scroll */
 .fitur-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -488,8 +474,6 @@ nav {
     padding: 100px 0;
     background: var(--bg-white);
 }
-
-/* Animasi langkah kerja muncul dari atas saat di-scroll */
 .steps {
     display: flex;
     justify-content: space-between;
@@ -550,8 +534,6 @@ nav {
     padding: 100px 0;
     background: var(--bg-white);
 }
-
-/* Animasi daftar faq muncul dari atas saat di-scroll */
 .faq-list {
     max-width: 800px;
     margin: 0 auto;
@@ -621,8 +603,6 @@ nav {
     padding: 100px 0;
     background: var(--bg-light);
 }
-
-/* Animasi kotak download membesar halus saat di-scroll */
 .download-content {
     background: linear-gradient(135deg, var(--dark), #2A2430);
     border-radius: var(--radius-lg);
@@ -879,4 +859,5 @@ nav {
     .download-action {
         flex-direction: column;
     }
+
 }
