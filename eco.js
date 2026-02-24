@@ -2,7 +2,6 @@
 const btnMobile = document.querySelector('.mobile-menu-btn');
 const menuNav = document.querySelector('.nav-menu');
 
-// buka tutup menu saat tombol diklik
 btnMobile.addEventListener('click', function() {
     menuNav.classList.toggle('aktif');
 });
@@ -10,7 +9,6 @@ btnMobile.addEventListener('click', function() {
 /* fitur faq (tanya jawab) */
 const semuaFaq = document.querySelectorAll('.faq-item');
 
-// cek semua kotak faq satu per satu
 semuaFaq.forEach(function(item) {
     const pertanyaan = item.querySelector('.faq-question');
     
@@ -29,18 +27,15 @@ semuaFaq.forEach(function(item) {
     });
 });
 
-/* alert tombol download */
 const tombolStore = document.querySelectorAll('.btn-store');
 
-// pasang klik di semua tombol download
 tombolStore.forEach(function(tombol) {
     tombol.addEventListener('click', function(event) {
         
-        // mencegah layar tiba-tiba loncat ke atas
         event.preventDefault(); 
         
-        // munculkan pop up pesan sederhana
         alert('Terima kasih! Aplikasi Eco-Track akan segera mulai diunduh ke perangkat Anda.');
     });
 });
+
 
